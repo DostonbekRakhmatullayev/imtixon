@@ -1,0 +1,18 @@
+.mustaqil__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.mustaqil__item {
+    overflow: hidden;
+    width: 21%;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px #fff;
+}
+.mustaqil__item:hover {
+    box-shadow: 2px 2px 13px #fff;
+}

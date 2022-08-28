@@ -1,0 +1,47 @@
+.pagesGenreld1__img {
+  border-radius: 10px;
+}
+
+.data_of_birth {
+  color: #c9ac8c;
+}
+.first__nme {
+  color: #c9ac8c;
+}
+
+.genreld__country {
+  color: #c9ac8c;
+}
+
+.genreld__spam {
+  font-size: 17px;
+}
+
+.genreld__list {
+  margin-left: 40px;
+  display: flex;
+  overflow: auto;
+  width: 800px;
+  padding-bottom: 10px;
+  // background-color: rgb(148, 148, 148);
+}
+
+.genreld__item {
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(25, 51, 56);
+}
+
+::-webkit-scrollbar {
+//   width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}

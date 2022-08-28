@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import { RegisterHook } from "./hook/RegisterHook";
+import { UseAuth } from "./hook/UseAuth";
+import { Main } from "./Main/Main";
+import { Login } from "./Pages/Login/Login";
+import {Register} from "./Pages/Register/Register"
+import { Registers } from "./Registers";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const { token } = UseAuth();
+  const {registers} = RegisterHook()
 
+
+      if (registers) {
+    
+        if (token) {
+          return <Main />;
+        }
+        <Routes>
+        <Route  path="/"  element={<Register/>}/>
+        {/* <Route  path="/aaa"  element={<Login/>}/> */}
+      </Routes>
+        return <Login/>
+        
+       
+      }else {
+        <Routes>
+        {/* <Route  path="/"  element={<Register/>}/> */}
+        <Route  path="/"  element={<Login/>}/>
+      </Routes>
+        return <Register/>
+      }
+}
 export default App;
