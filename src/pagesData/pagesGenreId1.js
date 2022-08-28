@@ -34,20 +34,6 @@ export const PagesGenreld1 = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       `https://book-service-layer.herokuapp.com/book/bookId/${params.id}`,
-  //       {
-  //         headers: {
-  //           Authorization: token.token,
-  //         },
-  //       }
-  //     )
-  //     .then((res) => console.log(res.data))
-  //     .catch((error) => console.log(error));
-  // }, [params.id]);
-
   return (
     <>
       <PagesGenreld className={theme}>
@@ -119,7 +105,6 @@ const PagesGenreld = styled.div`
   top: 100px;
   width: 100%;
   height: 86%;
-  /* background-color: darkslategray; */
 `;
 
 const Container = styled.div`

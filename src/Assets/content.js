@@ -64,6 +64,18 @@ const ContentData = {
 
     security__security: "Xavfsizlik",
     make_payment: "To'lovni amalga oshirish",
+    confirm_assword: "Parolni tasdiqlang",
+    confirm_number: "Iltimos, telefon raqamingizni kiriting.",
+    confirm_addres: "Iltimos, elektron pochta manzilingizni kiriting.",
+    confirm_til: "Iltimos, tildi kiriting.",
+    oq_qora: "Mavzu",
+    sahifalar_soni: "Sahifalar soni",
+    chop_etilgan: "Chop etilgan",
+    sotuvda_narxi: "Sotuvda narxi",
+    yil_yil: "yilda",
+    toliq_malumot: "To'liq ma'lumot",
+    text__text: " Inson bolasi ne kunlarni ko'rmaydi?! Har bir odam o'z g'ami bilan bo'lsa, hayotdan ko'z yumib ketganlarga umr bo'yi motam tutib o'tsa, bu moddiy olam shu kunlarga yetolarmidi? Hayot to'lqini ojizlarni qirg'oqqa irg'itib tashlaydi. Oqimga qarshi suza olganlar, to'lqinni egarlaganlargina ertangi kunga yetib keladi.",
+    text__text1: "    Yer kurrasida chumolidek mehnat qilayotganlardan ko'ra, tuproq tagida yotganlar ko'p. Yer qatlami odam suyaklariga to'lib ketgan",
   },
   ru: {
     nav_home: "Главная",
@@ -71,7 +83,6 @@ const ContentData = {
     nav_nazm: "Стих",
     nav_maqolalar: "Статьи",
     nav_forum: "Форум",
-    // add book
     book_book: "Добавить книгу",
     book_title: "Заголовок",
     book_pages: "Страницы",
@@ -128,6 +139,21 @@ const ContentData = {
 
     security__security: "Безопасность",
     make_payment: "Совершать платеж",
+    confirm_assword: "Подтвердить Пароль",
+    confirm_number: "Пожалуйста, введите свой номер телефона.",
+    confirm_addres: "Пожалуйста, введите свой адрес электронной почты.",
+    confirm_til: "Пожалуйста, введите ваше имя.",
+    oq_qora: "Тема",
+     sahifalar_soni: "Количество страниц",
+    chop_etilgan: "Напечатано",
+    sotuvda_narxi: "Цена в продаже",
+    yil_yil: "год",
+    toliq_malumot: "Полная информация",
+    text__text:
+      "Каких дней не видит человеческий ребенок?! Если бы у каждого человека было свое горе, если бы он всю жизнь оплакивал тех, кто ушел из жизни, дошел бы этот материальный мир до наших дней? Волна жизни вымывает слабых на берег. Только те, кто умеет плыть против течения и оседлать волну, доживут до завтра.",
+    text__text1:
+      "Людей, которые лежат под землей, больше, чем тех, кто работает, как муравьи на земле. Земной слой полон человеческих костей.",
+    
   },
   eng: {
     nav_home: "Home",
@@ -190,6 +216,21 @@ const ContentData = {
     mustaqillik_davri: "Independence period",
     security__security: "Security",
     make_payment: "Make Payment",
+    confirm_assword: "Confirm Password",
+    confirm_number: "Please enter your  phone number.",
+    confirm_addres: "Please enter your email address.",
+    confirm_til: "Please enter your first name.",
+    oq_qora: "Theme",
+    sahifalar_soni: "Number of pages",
+    chop_etilgan: "Printed",
+    sotuvda_narxi: "Price on sale",
+    yil_yil: "year",
+    toliq_malumot: "Full details",
+    text__text:
+      "What days does a human child not see?! If every person has his own grief, if he spends his whole life mourning those who have passed away, would this material world reach these days? The tide of life washes the weak ashore. Only those who can swim against the current and ride the wave will make it to tomorrow.",
+    text__text1:
+      "There are more people who lie under the soil than those who work like ants on the earth. The earth layer is full of human bones",
+   
   },
 };
 export default ContentData;

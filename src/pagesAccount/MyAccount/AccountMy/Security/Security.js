@@ -57,7 +57,7 @@ export const Security = () => {
           name="email"
           defaultValue={accounts.email}
         />
-        <p>{ContentData[lang].account_enter}</p>
+        <p>{ContentData[lang].account_phone}</p>
         <h5 className="m-0 p-1">{ContentData[lang].account_current}</h5>
         <input
           className="security__input form-control"
@@ -65,14 +65,22 @@ export const Security = () => {
           name="currentPassword"
         />
         <p>{ContentData[lang].account_please}</p>
-        <h5 className="m-0 -1">{ContentData[lang].account_password}</h5>
-        <input
-          className="security__input form-control"
-          type="password"
-          name="newPassword"
-        />
-        <p>{ContentData[lang].account_phone}</p>
-        <input type="password" name="passwordname" />
+        <div className="d-flex">
+          <div>
+            <h5 className="m-0 -1">{ContentData[lang].account_password}</h5>
+            <input
+              className=" form-control"
+              type="password"
+              name="newPassword"
+            />
+            <p>{ContentData[lang].confirm_number}</p>
+          </div>
+          <div className="confirm_password">
+            <h5 className="m-0 -1">{ContentData[lang].confirm_assword}</h5>
+            <input className="form-control" type="password" name="passwordname" />
+            <p>{ContentData[lang].confirm_addres}</p>
+          </div>
+        </div>
         <button className="security__btn" type="submit">
           {ContentData[lang].account_save}
         </button>

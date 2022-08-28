@@ -36,7 +36,7 @@ export const Login = () => {
         <Login__title>Sign in</Login__title>
         <Login__text>
           Do not you have an account?
-          <Login__span><Link to="/">Sign up</Link> </Login__span>
+          <Login__span>Sign up</Login__span>
         </Login__text>
         <Form__Login onSubmit={handleFormSubmit}>
           <Login__Input

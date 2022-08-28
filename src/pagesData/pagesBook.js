@@ -5,6 +5,8 @@ import { UseAuth } from "../hook/UseAuth";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { ThemeContext } from "../context/ThemContext";
+import useLang from "../hook/useLang";
+import ContentData from "../Assets/content";
 
 export const PagesBook = () => {
   const { theme } = useContext(ThemeContext);
@@ -12,6 +14,7 @@ export const PagesBook = () => {
   const [data, setData] = useState();
   const { token } = UseAuth();
   const [books, setBooks] = useState([]);
+  let [lang] = useLang();
   useEffect(() => {
     axios
       .get(
@@ -50,11 +53,11 @@ export const PagesBook = () => {
               <div className="mx-5">
                 <div>
                   <h2 className="book__title">{data?.title}</h2>
-                  <p className="book__page">Sahifalar soni: {data?.page}</p>
-                  <p className="book__page">Chop etilgan: {data?.year}yilda</p>
-                  <p className="book__page">Sotuvda narxi {data?.price}$</p>
+                  <p className="book__page"> {ContentData[lang].sahifalar_soni}: {data?.page}</p>
+                  <p className="book__page">{ContentData[lang].chop_etilgan}: {data?.year}{ContentData[lang].yil_yil}</p>
+                  <p className="book__page"> {ContentData[lang].sotuvda_narxi}{data?.price}$</p>
                   <div>
-                    <p className="mb-0 fs-4">To'liq ma'lumot</p>
+                    <p className="mb-0 fs-4">{ContentData[lang].toliq_malumot}</p>
                     <p className="w-75">{data?.description}</p>
                   </div>
                 </div>
@@ -64,19 +67,12 @@ export const PagesBook = () => {
               <ul className="d-flex justify-content-around mt-5">
                 <li className={`card book__text ${theme}`} >
                   <p>
-                    Inson bolasi ne kunlarni ko‘rmaydi?! Har bir odam o‘z g‘ami
-                    bilan bo‘lsa, hayotdan ko‘z yumib ketganlarga umr bo‘yi
-                    motam tutib o‘tsa, bu moddiy olam shu kunlarga yetolarmidi?
-                    Hayot to‘lqini ojizlarni qirg‘oqqa irg‘itib tashlaydi.
-                    Oqimga qarshi suza olganlar, to‘lqinni egarlaganlargina
-                    ertangi kunga yetib keladi.
+                  {ContentData[lang].text__text}
                   </p>
                 </li>
                 <li className={`card book__text ${theme}`}>
                   <p>
-                    Yer kurrasida chumolidek mehnat qilayotganlardan ko‘ra,
-                    tuproq tagida yotganlar ko‘p. Yer qatlami odam suyaklariga
-                    to‘lib ketgan.
+                  {ContentData[lang].text__text1}
                   </p>
                 </li>
               </ul>
@@ -108,7 +104,7 @@ const PagesGenreld = styled.div`
   position: absolute;
   top: 96px;
   width: 100%;
-  /* height: 100%; */
+
 `;
 
 const Container = styled.div`

@@ -8,8 +8,10 @@
 //   return (
 //     <div>
 //       <Routes>
-//         <Route  path="/"  element={<Register/>}/>
-//         <Route  path="/aaa"  element={<Login/>}/>
+//         if(token) {
+//            <Route  path="login"  element={<Register/>}/>
+//         }
+//         <Route  path="/*"  element={<Login/>}/>
 //       </Routes>
 //     </div>
 //   );

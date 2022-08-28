@@ -26,9 +26,10 @@ export const MakePayment = () => {
         <option value="ru">Русский</option>
         <option value="eng">English</option>
       </select>
-      <p> {ContentData[lang].ettings_name}</p>
+      <p> {ContentData[lang].confirm_til}</p>
 
       <div>
+        <h5>{ContentData[lang].oq_qora}</h5>
         <div
           onClick={() => {
             if (theme === "light") {

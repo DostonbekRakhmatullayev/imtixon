@@ -8,7 +8,7 @@ import { RegisterHook } from "../../hook/RegisterHook";
 export const Register = () => {
   const {registers, setRegisters} = RegisterHook()
   // const { token, setToken } = UseAuth();
-  console.log(registers);
+  // console.log(registers);
 
   const funcSubmit = (evt) => {
     evt.preventDefault();
@@ -36,7 +36,7 @@ export const Register = () => {
         <Register__title>Sign up</Register__title>
         <Register__text>
           Already have an account?
-          <Span__text><Link to="/"></Link> Sign in</Span__text>
+          <Span__text>Sign in</Span__text>
         </Register__text>
         <Form__register onSubmit={funcSubmit}>
           <Input__register type="text" name="first_name" placeholder="First name..." />
